@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      photos: []
+    }
+  }
+  componentDidMount(){
+    fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
+    .then(response => response.json())
+    .then(json => this.setState({photos: json}))
+  }
   render() {
     return (
       <div className="container-fluid p-0">
@@ -29,6 +41,24 @@ class App extends Component {
             </section>        
           </nav>
 
+          <section className="container p-2">
+              <ul className="list-unstyle">
+                  {
+                    this.state.photos.map(photo => {
+                      return(
+                        <li className="media pt-2">
+                          <img src={photo.thumbnailUrl} alt="" className="mr-3" />
+                          <div className="media-body">
+                            <h5 className="mt-0 mb-1">{photo.title}</h5>
+                              <p>Título do vídeo: {photo.title}</p> 
+                          </div>
+                        </li>
+                      )
+                    })
+                  }                 
+              </ul> 
+          </section>
+         
           <footer className="container col-12 pt-3 footer bg-dark text-light text-center">
             <container className="container col-6 col-md-2 d-flex justify-content-around">  
               <i class="fab fa-facebook-square"></i>

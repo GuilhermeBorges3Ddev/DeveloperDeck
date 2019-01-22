@@ -29,6 +29,53 @@ class App extends Component {
             </section>        
           </nav>
 
+          <section className="container p-2">
+              <ul className="list-unstyle">
+                 <li className="media">
+                    <img src="https://via.placeholder.com/150/771796" alt="" className="mr-3" />
+                    <div className="media-body">
+                        <h5 className="mt-0 mb-1">dadadadadadadadad</h5>
+                        Blau BlauBlauBlauBlauBlauBlauBlauBlauBlau
+                    </div>
+                 </li>
+                 <li className="media pt-2">
+                    <img src="https://via.placeholder.com/150/771796" alt="" className="mr-3" />
+                    <div className="media-body">
+                        <h5 className="mt-0 mb-1">dadadadadadadadad</h5>
+                        Blau BlauBlauBlauBlauBlauBlauBlauBlauBlau
+                    </div>
+                 </li>
+                 <li className="media pt-2">
+                    <img src="https://via.placeholder.com/150/771796" alt="" className="mr-3" />
+                    <div className="media-body">
+                        <h5 className="mt-0 mb-1">dadadadadadadadad</h5>
+                        Blau BlauBlauBlauBlauBlauBlauBlauBlauBlau
+                    </div>
+                 </li>
+                 <li className="media pt-2">
+                    <img src="https://via.placeholder.com/150/771796" alt="" className="mr-3" />
+                    <div className="media-body">
+                        <h5 className="mt-0 mb-1">dadadadadadadadad</h5>
+                        Blau BlauBlauBlauBlauBlauBlauBlauBlauBlau
+                    </div>
+                 </li>
+                 <li className="media pt-2">
+                    <img src="https://via.placeholder.com/150/771796" alt="" className="mr-3" />
+                    <div className="media-body">
+                        <h5 className="mt-0 mb-1">dadadadadadadadad</h5>
+                        Blau BlauBlauBlauBlauBlauBlauBlauBlauBlau
+                    </div>
+                 </li>
+                 <li className="media pt-2">
+                    <img src="https://via.placeholder.com/150/771796" alt="" className="mr-3" />
+                    <div className="media-body">
+                        <h5 className="mt-0 mb-1">dadadadadadadadad</h5>
+                        Blau BlauBlauBlauBlauBlauBlauBlauBlauBlau
+                    </div>
+                 </li> 
+              </ul> 
+          </section>
+         
           <footer className="container col-12 pt-3 footer bg-dark text-light text-center">
             <container className="container col-6 col-md-2 d-flex justify-content-around">  
               <i class="fab fa-facebook-square"></i>

@@ -9,14 +9,17 @@ class App extends Component {
       photos: []
     }
   }
+
   componentDidMount(){
     fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
     .then(response => response.json())
     .then(json => this.setState({photos: json}))
   }
+
   render() {
     return (
       <div className="container-fluid p-0">
+
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <a className="navbar-brand" href="#"><i className="fas fa-stroopwafel"></i>&nbsp;WD2019</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainToggler"
@@ -41,7 +44,46 @@ class App extends Component {
             </section>        
           </nav>
 
-          <section className="container p-2">
+          <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
+              <ol className="carousel-indicators">
+                  <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
+                  <li data-target="#carouselSection" data-slide-to="1"></li>
+                  <li data-target="#carouselSection" data-slide-to="2"></li>
+              </ol>
+              <div className="carousel-inner">
+                  <div className="carousel-item active">
+                      <img src="https://via.placeholder.com/600/92c952" alt="Imagem0" className="d-block w-100"/>
+                      <div className="carousel-caption d-none d-md-block">
+                        <h4>Imagem 1</h4>
+                        <p>Alguma Informação</p>
+                      </div>
+                  </div>
+                  <div className="carousel-item">
+                      <img src="https://via.placeholder.com/600/771796" alt="Imagem1" className="d-block w-100"/>
+                      <div className="carousel-caption d-none d-md-block">
+                        <h4>Imagem 2</h4>
+                        <p>Alguma Informação</p>
+                      </div>
+                  </div>
+                  <div className="carousel-item">
+                      <img src="https://via.placeholder.com/600/24f355" alt="Imagem2" className="d-block w-100"/>
+                      <div className="carousel-caption d-none d-md-block">
+                        <h4>Imagem 3</h4>
+                        <p>Alguma Informação</p>
+                      </div>
+                  </div>
+              </div>
+              <div className="carousel-control-prev" href="#carouselSection" role="button" data-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="sr-only">Previous</span>
+              </div>
+              <div className="carousel-control-next" href="#carouselSection" role="button" data-slide="prev">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="sr-only">Next</span>
+              </div>
+          </section>
+
+          <section className="container p-3 mt-5 mb-5">
               <ul className="list-unstyle">
                   {
                     this.state.photos.map(photo => {
@@ -68,6 +110,7 @@ class App extends Component {
               <i class="fab fa-twitter-square"></i>
             </container>  
           </footer>      
+      
       </div>
     );
   }

@@ -44,6 +44,7 @@ class App extends Component {
             </section>        
           </nav>
 
+          <div className="col-md-12 col-12 pt-3 pt-md-3">
           <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
               <ol className="carousel-indicators">
                   <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
@@ -82,13 +83,14 @@ class App extends Component {
                   <span className="sr-only">Next</span>
               </div>
           </section>
+          </div>
 
-          <section className="container p-3 mt-5 mb-5">
+          <section className="container p-3 mt-2 pb-2">
               <ul className="list-unstyle">
                   {
                     this.state.photos.map(photo => {
                       return(
-                        <li className="media pt-2">
+                        <li className="media pt-5">
                           <img src={photo.thumbnailUrl} alt="" className="mr-3" />
                           <div className="media-body">
                             <h5 className="mt-0 mb-1">{photo.title}</h5>

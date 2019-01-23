@@ -45,7 +45,7 @@ class App extends Component {
           </nav>
 
           <div className="col-md-12 col-12 pt-3 pt-md-3">
-          <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
+          <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="4000">
               <ol className="carousel-indicators">
                   <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
                   <li data-target="#carouselSection" data-slide-to="1"></li>

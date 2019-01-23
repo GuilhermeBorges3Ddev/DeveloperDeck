@@ -1,2 +1,2 @@
-# We-Dev
-Beta version of a streaming plataform combing React+Redux on the front-end
+# DeveloperDeck App
+Beta version of a plataform who combines React+Bootstrao on the front-end

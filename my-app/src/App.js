@@ -21,7 +21,7 @@ class App extends Component {
       <div className="container-fluid p-0">
 
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-            <a className="navbar-brand" href="#"><i className="fas fa-stroopwafel"></i>&nbsp;WD2019</a>
+            <a className="navbar-brand" href="#"><i className="fas fa-stroopwafel"></i>&nbsp;DeveloperDeck</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainToggler"
               aria-controls="navbarMainToggler" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@ class App extends Component {
           </nav>
 
           <div className="col-md-12 col-12 pt-3 pt-md-3">
-          <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
+          <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="4000">
               <ol className="carousel-indicators">
                   <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
                   <li data-target="#carouselSection" data-slide-to="1"></li>
@@ -85,7 +85,7 @@ class App extends Component {
           </section>
           </div>
 
-          <section className="container p-3 mt-2 pb-2">
+          <section className="container p-3 mt-2 pb-2 text-white">
               <ul className="list-unstyle">
                   {
                     this.state.photos.map(photo => {

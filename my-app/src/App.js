@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import DesktopTowerMonitorIcon from 'mdi-react/DesktopTowerMonitorIcon';
+
 class App extends Component {
 
   constructor(props){
@@ -21,7 +23,7 @@ class App extends Component {
       <div className="container-fluid p-0">
 
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-            <a className="navbar-brand" href="#"><i className="fas fa-stroopwafel"></i>&nbsp;DeveloperDeck</a>
+            <a className="navbar-brand" href="#"><DesktopTowerMonitorIcon></DesktopTowerMonitorIcon>&nbsp;DeveloperDeck</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainToggler"
               aria-controls="navbarMainToggler" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>

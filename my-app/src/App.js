@@ -30,9 +30,9 @@ class App extends Component {
             </button>
             <section className="collapse navbar-collapse" id="navbarMainToggler">
               <div className="navbar-nav ml-auto pr-3">
-                <a className="nav-item nav-link" href="#">Home</a>
-                <a className="nav-item nav-link" href="#">Channel</a>
-                <a className="nav-item nav-link" href="#">Login</a>
+                <a className="nav-item nav-link mt-md-3" href="#">Home</a>
+                <a className="nav-item nav-link mt-md-3" href="#">Channel</a>
+                <a className="nav-item nav-link mt-md-3 mb-3 md-md-0" href="#">Login</a>
               </div>
               <form className="form-inline">
                 <div className="input-group">
@@ -41,7 +41,7 @@ class App extends Component {
                   </div>
                   <input type="text" className="form-control mr-3" placeholder="Username"/>  
                 </div>
-                <button className="btn btn-outline-success">Login</button>
+                <button className="btn btn-outline-success mt-4 mt-md-0">Login</button>
               </form>
             </section>        
           </nav>

@@ -53,23 +53,23 @@ class App extends Component {
                   <li data-target="#carouselSection" data-slide-to="1"></li>
                   <li data-target="#carouselSection" data-slide-to="2"></li>
               </ol>
-              <div className="carousel-inner">
+              <div className="carousel-inner align-content-center">
                   <div className="carousel-item active">
-                      <img src="https://via.placeholder.com/600/92c952" alt="Imagem0" className="d-block w-100"/>
+                      <img src="https://via.placeholder.com/400/92c952" alt="Imagem0" className="d-block w-md-50 w-100"/>
                       <div className="carousel-caption d-none d-md-block">
                         <h4>Imagem 1</h4>
                         <p>Alguma Informação</p>
                       </div>
                   </div>
                   <div className="carousel-item">
-                      <img src="https://via.placeholder.com/600/771796" alt="Imagem1" className="d-block w-100"/>
+                      <img src="https://via.placeholder.com/400/771796" alt="Imagem1" className="d-block w-md-50 w-100"/>
                       <div className="carousel-caption d-none d-md-block">
                         <h4>Imagem 2</h4>
                         <p>Alguma Informação</p>
                       </div>
                   </div>
                   <div className="carousel-item">
-                      <img src="https://via.placeholder.com/600/24f355" alt="Imagem2" className="d-block w-100"/>
+                      <img src="https://via.placeholder.com/400/24f355" alt="Imagem2" className="d-block w-md-50 w-100"/>
                       <div className="carousel-caption d-none d-md-block">
                         <h4>Imagem 3</h4>
                         <p>Alguma Informação</p>
